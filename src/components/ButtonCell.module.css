@@ -1,0 +1,57 @@
+.active {
+  border-color: var(--primary-orange) !important;
+  background-color: var(--pale-orange);
+  box-shadow: var(--row-selected);
+}
+
+.mainButtonCell {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: calc((26 / 16) * 1rem);
+  padding: 0.5rem 1rem;
+  border: 3px solid #fbf6ef;
+  border-radius: 1rem;
+}
+.mainButtonCell > div:nth-child(1) {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: calc((40 / 16) * 1rem);
+}
+.mainButtonCell > div:nth-child(1) > p {
+  align-self: center;
+}
+.mainButtonCell > div:nth-child(2) {
+  width: calc((154 / 16) * 1rem);
+}
+.num {
+  width: 2rem !important;
+  height: 2rem !important;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background-color: var(--very-pale-violet);
+}
+.num p {
+  color: var(--primary-violet);
+  font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+  .mainButtonCell {
+    gap: calc((8 / 16) * 1rem);
+    padding: calc((6 / 16) * 1rem);
+  }
+  .mainButtonCell > div:nth-child(1) {
+    gap: calc((8 / 16) * 1rem);
+  }
+  .num {
+    width: calc((24 / 16) * 1rem);
+    height: calc((24 / 16) * 1rem);
+  }
+  .num p {
+    font-size: 0.85rem;
+  }
+}

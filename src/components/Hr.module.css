@@ -1,0 +1,13 @@
+.mainHr {
+  width: 3px;
+  height: 100%;
+  border-radius: 6px;
+  background-color: var(--primary-orange);
+}
+
+@media (max-width: 768px) {
+  .mainHr {
+    height: 3px;
+    width: 100%;
+  }
+}

@@ -1,0 +1,30 @@
+.mainDetailSection {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.fade {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 84%;
+  height: calc((30 / 16) * 1rem);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.82) 100%
+  );
+}
+
+@media (max-width: 768px) {
+  .mainDetailSection {
+    flex-direction: column;
+  }
+  .fade {
+    width: 100%;
+  }
+}

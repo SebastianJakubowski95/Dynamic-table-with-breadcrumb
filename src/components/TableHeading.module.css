@@ -1,0 +1,23 @@
+.mainTableHeading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 calc((70 / 16) * 1rem) 0 calc((36 / 16) * 1rem) !important;
+  width: 100%;
+}
+
+.mainTableHeading > div {
+  display: flex;
+  gap: calc((40 / 16) * 1rem);
+  align-items: center;
+  justify-content: flex-start;
+}
+
+@media (max-width: 768px) {
+  .mainTableHeading {
+    padding: 0px calc((66 / 16) * 1rem) 0 calc((22 / 16) * 1rem) !important;
+  }
+  .mainTableHeading > div {
+    gap: 1rem;
+  }
+}

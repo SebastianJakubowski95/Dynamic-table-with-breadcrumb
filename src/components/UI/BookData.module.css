@@ -1,0 +1,37 @@
+.mainBookData {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: flex-start;
+  justify-content: flex-start;
+  min-height: 50vh;
+  height: 70%;
+  overflow: scroll;
+}
+
+.subjects {
+  display: flex;
+}
+.subjects > p:nth-child(1) {
+  text-align: center;
+  width: calc((117 / 16) * 1rem);
+}
+
+@media (max-width: 768px) {
+  .mainBookData {
+    flex-direction: column;
+  }
+  .content {
+    gap: 0.5rem;
+  }
+  .subjects > p:nth-child(1) {
+    text-align: start;
+    width: calc((100 / 16) * 1rem);
+  }
+}

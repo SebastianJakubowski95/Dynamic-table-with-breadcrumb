@@ -1,0 +1,36 @@
+.mainAuthorData {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 2rem;
+  width: 100%;
+  min-height: 50vh;
+  height: 70%;
+  overflow: scroll;
+}
+
+.list-of-books {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 0;
+  width: -webkit-fill-available;
+}
+
+@media (max-width: 768px) {
+  .mainAuthorData {
+    flex-direction: column;
+    gap: calc((12 / 16) * 1rem);
+    align-items: center;
+  }
+  .content {
+    gap: 1rem;
+  }
+}

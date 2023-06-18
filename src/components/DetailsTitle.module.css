@@ -1,0 +1,21 @@
+.mainDetailsTitle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.5rem 0;
+  width: calc((132 / 16) * 1rem);
+}
+
+.mainDetailsTitle > p {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .mainDetailsTitle {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
