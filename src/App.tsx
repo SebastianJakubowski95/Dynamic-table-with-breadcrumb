@@ -3,6 +3,7 @@ import Table from "./components/UI/Table";
 import AuthorData from "./components/UI/AuthorData";
 import BookData from "./components/UI/BookData";
 import RootLayout from "./components/UI/RootLayout";
+import RootRouteRedirect from "./components/RootRouteRedirect";
 
 interface data {
   data: any;
@@ -10,6 +11,10 @@ interface data {
 
 const App: React.FC<data> = (props) => {
   const router = createBrowserRouter([
+    {
+      path: "/Dynamic-table-with-breadcrumb/",
+      element: <RootRouteRedirect />,
+    },
     {
       path: "/",
       element: <RootLayout />,
@@ -20,7 +25,10 @@ const App: React.FC<data> = (props) => {
             <Table data={props.data.data} isFetching={props.data.isFetching} />
           ),
         },
-        { path: "/:author", element: <AuthorData data={props.data.data} /> },
+        {
+          path: "/:author",
+          element: <AuthorData data={props.data.data} />,
+        },
         {
           path: "/:author/:book",
           element: <BookData data={props.data.data} />,
